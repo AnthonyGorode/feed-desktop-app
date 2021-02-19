@@ -7,7 +7,7 @@ const path = require('path');
 // 2. Define input and output directory.
 // Important: the directories must be absolute, not relative e.g
 // appDirectory
-const APP_DIR = path.resolve(__dirname, './feedTraining-win32-x64');
+const APP_DIR = path.resolve(__dirname, './feedApp-win32-x64');
 // outputDirectory
 const OUT_DIR = path.resolve(__dirname, './windows_installer');
 
@@ -17,8 +17,8 @@ const msiCreator = new MSICreator({
     outputDirectory: OUT_DIR,
 
     // Configure metadata
-    description: 'This is a training for electron application',
-    exe: 'feedTraining',
+    description: 'This is a feed desktop application',
+    exe: 'feedApp',
     name: 'Feed desktop application',
     manufacturer: 'Feed app Inc',
     version: '1.0.0',

@@ -1,6 +1,6 @@
 {
-  "name": "feed_training",
-  "productName": "Electron feed training",
+  "name": "feed_app",
+  "productName": "Electron feed app",
   "version": "1.0.0",
   "description": "This is a feed app",
   "main": "main.js",
@@ -8,8 +8,7 @@
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
-    "packager-win": "electron-packager . --platform=win32 --arch=x64 --icon=assets/icons/win/icon.ico feedTraining",
-    "packager-msi": "node build_installer.js",
+    "msi-packager-win": "electron-packager . --platform=win32 --arch=x64 --icon=assets/icons/win/icon.ico feedApp && node build_installer.js",
     "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
     "package-win": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Electron feed training\"",
     "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
